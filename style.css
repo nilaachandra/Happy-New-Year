@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Assistant&family=Ephesis&family=Kalnia&family=Martel+Sans&family=Pacifico&family=Poppins&family=Raleway:wght@400;800&family=Saira+Extra+Condensed&family=Space+Grotesk&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico';
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.main{
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.heading{
+    color: white;
+    text-transform: capitalize;
+    font-size: 32px;
+}
+h2{
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: center;
+}
+h2 span{
+    display: inline-block;
+    transform: translateY(100%);
+}
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup{
+    width: 400px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-out;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: all 0.2s ease-in-out;
+}
+.popup button{
+    width: 300px;
+    background-color: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin: 10px;
+}
