@@ -33,7 +33,7 @@ function openPopup(){
 popupOpen.addEventListener('click', openPopup);
 
 
-//close popup
+//fireworks
 function confettis() {
     const duration = 15 * 1000,
   animationEnd = Date.now() + duration,
